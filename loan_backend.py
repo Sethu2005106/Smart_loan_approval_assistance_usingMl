@@ -11,7 +11,7 @@ from sklearn.neighbors import KNeighborsClassifier
 from sklearn.metrics import accuracy_score
 import pickle
 
-df = pd.read_csv('Loan_default.csv')
+df = pd.read_csv('loan_default.csv')
 
 print("✅ Dataset Loaded Successfully!")
 print(df.head())
@@ -61,3 +61,4 @@ best_pipeline.fit(x_train, y_train)
 
 pickle.dump(best_pipeline, open('Loan_Default_Model.sav', 'wb'))
 print("💾 Model saved as 'Loan_Default_Model.sav'")
+
