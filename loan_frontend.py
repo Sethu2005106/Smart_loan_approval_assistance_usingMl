@@ -9,7 +9,7 @@ from sklearn.neighbors import KNeighborsClassifier
 st.set_page_config(page_title="Loan Default Predictor", page_icon="💰", layout="centered")
 st.title("💰 Loan Default Prediction System")
 
-df = pd.read_csv('Loan_default.csv')
+df = pd.read_csv('loan_default.csv')
 
 X = df.drop('Default', axis=1)
 y = df['Default']
@@ -51,3 +51,4 @@ if st.button("Predict"):
 
 st.markdown("---")
 st.caption("✅ Automatically detects columns and safely ignores unknown categories.")
+
